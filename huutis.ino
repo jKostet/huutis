@@ -11,8 +11,8 @@ boolean moved = false;
 
 // adjust these according to testing and space
 int low = 200;  // for beep
-int med = 300;  // for two higher beeps 
-int high = 500; // drive!
+int med = 400;  // for two higher beeps 
+int high = 600; // drive!
 
 // adjust how long robot goes each drive!
 int driveMs = 100;
@@ -35,7 +35,7 @@ void setup() {
 void loop() {
 
   if (moved) {
-    delay(10);
+    delay(100);
     moved = false;
     return;
   }
